@@ -1,34 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mail Yaz</title>
 <style>
-    .textarea{
+      .navbardiv{
+         font-size: large;
+         padding-left: 50px;
+         font-weight: bold;
+         
+         
+        }
+        .navbardiv ul li a {color: white;}
+    .textarea {
         width: 500px;
         height: 250px;
     }
 </style>
+</head>
+<body style="background-color: #CDE8E5;">
 
-<div class="input-group">
-    <div class="input-group-prepend ">
-       
-
-    
-
-    </div>
-    <textarea class="form-control textarea" aria-label="mesaj"></textarea>
-    
-  </div>
-  <button onclick="getText(mesaj)">Kaydet</button>
-
-  <script>
-    function getText(mesaj) {
-        var mesaj = document.getElementById("Text").value;
+    <nav class="navbar navbar-expand-lg navbar-success" style="background-color: #4D869C;">
         
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbardiv" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+               <a class="nav-link" href="giriş.html"><i class="fa-solid fa-house"></i> Giriş </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sehrim.html">Şehrim</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link " href="Özgeçmiş.html">Özgeçmiş</a>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  İletişim
+                </a>
+    
+                <div class="dropdown-menu" style="background-color:#4D869C;border-style: none;">
+                  <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="#">0538 019 2054</a>
+                  <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="mailto:sumeyra.akca@ogr.sakarya.edu.tr?subject=Konu&body=Mesajınız buraya yazabilirsiniz">sumeyra.akca@ogr.sakarya.edu.tr</a>
+                  <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="https://wa.me/905380192054?text=Mesajınızı%20buraya%20yazabilirsiniz">Whatsapp İletişim</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mirasımız.html" > Mirasımız      <img src="Denizlisporamblemi.png" width="30px" height="30px"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Hakkında.html">Hakkında</a>
+              </li>
+          </ul>
+        </div>
+    
+      </nav>
 
+
+
+
+
+
+
+<div class="input-group" style="margin-left: 30%; margin-top: 100px;">
+    <h2 style="margin-left: 200px; color: #4D869C;">Mail Yazınız</h2>
+    <br>
+    <div class="input-group-prepend">
+        <textarea class="form-control textarea" aria-label="mesaj" id="mesaj" style="width: 400px;height:400px;"></textarea>
+    </div>
+    <button onclick="kaydet()" style="background-color: #4D869C;">Kaydet</button>
+    <button onclick="mailGonder()" style="background-color: #4D869C;">Gönder</button>
+</div>
+
+<script>
+    function kaydet() {
+        var mesaj = document.getElementById('mesaj').value;
+        console.log("Mesaj kaydedildi: " + mesaj);
+    }
+
+    function mailGonder() {
+        var mesaj = document.getElementById('mesaj').value;
+        var mailtoLink = 'mailto:sumeyra.akca@ogr.sakarya.edu.tr?subject=Konu&body=' + encodeURIComponent(mesaj);
+        window.location.href = mailtoLink;
     }
 </script>
-  
-  <a class="btn btn-primary" href="mailto:sumeyra.akca@ogr.sakarya.edu.tr?subject=Konu&body="mesaj  role="button">Gönder</a>
-
-    
 
 
 
-    
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+</html>
