@@ -55,6 +55,9 @@
               <li class="nav-item">
                 <a class="nav-link " href="Hakkında.html">Hakkında</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link " href="ilgi alanlarım.html">İlgi Alanlarım</a>
+              </li>
           </ul>
         </div>
     
@@ -66,21 +69,22 @@
 
 
 
-<div class="input-group" style="margin-left: 30%; margin-top: 100px;">
-    <h2 style="margin-left: 200px; color: #4D869C;">Mail Yazınız</h2>
+<div class="input-group" style="margin-left: 30%; margin-top: 30px;">
+  <div class="row">
+    <h2 style="margin-left: 130px; color: #4D869C;">Mail Yazınız</h2>
     <br>
-    <div class="input-group-prepend">
+    <div class="container">
         <textarea class="form-control textarea" aria-label="mesaj" id="mesaj" style="width: 400px;height:400px;"></textarea>
     </div>
-    <button onclick="kaydet()" style="background-color: #4D869C;">Kaydet</button>
-    <button onclick="mailGonder()" style="background-color: #4D869C;">Gönder</button>
+  
+    <button onclick="mailGonder()" style="background-color: #4D869C;margin-left: 180px;">Gönder</button>
+    </div>
 </div>
 
+
 <script>
-    function kaydet() {
-        var mesaj = document.getElementById('mesaj').value;
-        console.log("Mesaj kaydedildi: " + mesaj);
-    }
+   
+    
 
     function mailGonder() {
         var mesaj = document.getElementById('mesaj').value;
@@ -89,6 +93,9 @@
     }
 </script>
 
+<h2 style="width:30%;">
+  <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="https://wa.me/905380192054?text=Mesajınızı%20buraya%20yazabilirsiniz">Whatsapp İletişim</a>
+</h2>
 
 
 
