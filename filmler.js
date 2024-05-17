@@ -56,7 +56,6 @@ async function filmler() {
         
         
         
-        
         console.log(result[56])
     console.log(result[56].rating)
     console.log(result)
