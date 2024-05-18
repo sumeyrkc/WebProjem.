@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-
+<link rel="stylesheet" href="app.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <style>
+    .card img {border-radius: 30px;}
     .card-body p {
       font-size: 17px;
       color: black;
     }
-
+.card{ background-color:#CDE8E5;}
     .card-body h5 {
       font-weight: bold;
       font-size: 25px;
@@ -27,17 +28,6 @@
       justify-content: start;
     }
 
-    .cardmiras {
-      display: inline-block;
-      color: #A79277;
-      text-align: center;
-    }
-
-    ul li h4 {
-      color: black;
-      text-align: center;
-    }
-
     ul li {
       color: #4D869C;
       font-size: large;
@@ -46,17 +36,6 @@
 
     }
 
-    .navbardiv {
-      font-size: large;
-      padding-left: 50px;
-      font-weight: bold;
-
-
-    }
-
-    .navbardiv ul li a {
-      color: #FEF5ED;
-    }
   </style>
 </head>
 
@@ -66,58 +45,38 @@
 
 <body style="background-color: #CDE8E5;font-family: Arial, Helvetica, sans-serif;">
 
-
-  <nav class="navbar navbar-expand-lg navbar-success" style="background-color: #4D869C;">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbardiv navbar-expand-lg navbar-dark" style="background-color: #4D869C;font-size: large;color: white;" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse navbardiv" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item ">
-          <a class="nav-link" href="giriş.html"><i class="fa-solid fa-house"></i> Giriş </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sehrim.html">Şehrim</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link " href="Özgeçmiş.html">Özgeçmiş</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+           <a class="nav-link" href="index.html" id="hover"><i class="fa-solid fa-house"></i> Giriş </a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            İletişim
-          </a>
-
-          <div class="dropdown-menu" style="background-color: #99A799; color: #FEF5ED;">
-            <a class="dropdown-item" style="background-color:#99A799" href="#">0538 019 2054</a>
-            <a class="dropdown-item" style="background-color: #99A799;"
-              href="mailto:sumeyra.akca@ogr.sakarya.edu.tr?subject=Konu&body=Mesajınız buraya yazabilirsiniz">sumeyra.akca@ogr.sakarya.edu.tr</a>
-            <a class="dropdown-item" style="background-color: #99A799;"
-              href="https://wa.me/905380192054?text=Mesajınızı%20buraya%20yazabilirsiniz">Whatsapp İletişim</a>
-          </div>
+        <li class="nav-item active">
+          <a class="nav-link" href="sehrim.html" id="hover">Şehrim</a>
         </li>
-        <li class="nav-item">
-          <li class="nav-item">
-            <a class="nav-link" href="mirasımız.html"> Mirasımız <img src="Denizlisporamblemi.png" width="30px"
-                    height="30px"></a>
+       
+        <li class="nav-item active">
+          <a class="nav-link " href="Özgeçmiş.html" id="hover">Özgeçmiş</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="Hakkında.html">Hakkında</a>
+        <li class="nav-item active">
+          <a class="nav-link " href="iletişim.html" id="hover">İletişim</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="ilgi alanlarım.html">İlgi Alanlarım</a>
-        </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mirasımız.html" id="hover" > Mirasımız      <img src="resimler/Denizlisporamblemi.png" width="30px" height="30px"></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="Hakkında.html" id="hover">Hakkında</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="ilgi alanlarım.html" id="hover">İlgi Alanlarım</a>
+          </li>
       </ul>
     </div>
-
   </nav>
-
-
-
-
-
 
   <h1 style="text-align: center;color:#4D869C;"> <b>DENİZLİ</b></h1>
   <br>
@@ -131,40 +90,36 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
 
         <div class="carousel-inner ">
 
           <div class="item active">
-            <a href="#pamuk"> <img src="pamukkale.slider.jpg" alt="Işıklı" style="width:100%;"></a>
+            <a href="#pamuk"> <img src="resimler/pamukkale.slider.jpg"  style="width:100%;"></a>
             <div class="carousel-caption">
               <h3>Pamukkale Travertenleri</h3>
-
             </div>
           </div>
-
           <div class="item">
-            <a href="#laodik"> <img src="laodikya.slider.jpg" alt="laodikya" style="width:100%;"> </a>
+            <a href="#laodik"> <img src="resimler/laodikya.slider.jpg" style="width:100%;"> </a>
             <div class="carousel-caption">
               <h3>Laodikya Antik Kenti</h3>
             </div>
           </div>
-
           <div class="item">
-            <a href="#kaklık"><img src="kaklıkmağarası.slider.jpg" alt="kaklık" style="width:100%;"> </a>
+            <a href="#kaklık"><img src="resimler/kaklıkmağarası.slider.jpg" style="width:100%;"> </a>
             <div class="carousel-caption">
               <h3> Kaklık Mağarası</h3>
             </div>
           </div>
-
           <div class="item">
-            <a href="#ışıklı"><img src="acıpayamkannyonu.jpg" alt="kaklık" style="width:100%;"> </a>
+            <a href="#ışıklı"><img src="resimler/acıpayamkannyonu.jpg"  style="width:100%;"> </a>
             <div class="carousel-caption">
               <h3> Acıpayam Kanyonu</h3>
             </div>
           </div>
-
         </div>
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
@@ -183,66 +138,56 @@
       <div class="col-lg-12 col-md-8 col-sm-4">
         <div class="card" style="background-color: #CDE8E5;border-style: none;">
           <div class="card-body">
-
             <p class="card-text">
-            <ul style="list-style-type: none;">
-              <br>
-              <br>
-
-              <li style="font-weight: bolder;">Tarihi ve Kültürü:
-                <h4>Denizli'nin tarihi, antik çağlara kadar uzanır.
+            <ul style="list-style-type: none;font-size: large;">
+              <br> <br>
+              <li style="font-weight: bolder;font-size: x-large;">Tarihi ve Kültürü:
+                <h4 style="font-size: large;">Denizli'nin tarihi, antik çağlara kadar uzanır.
                   Frigya, Lidya, Pers, Roma ve Bizans gibi pek çok medeniyetin izleri bu bölgede bulunabilir.
                   Şehir, tarihi ve kültürel mirasıyla ünlüdür. Hierapolis Antik Kenti ve Pamukkale Travertenleri,
                   UNESCO Dünya Mirası Listesi'nde yer alır.</h4>
               </li>
-
-              <li style="font-weight: bolder;">Ekonomi:
-                <h4>Denizli ekonomisi tarım, tekstil, turizm ve sanayi gibi çeşitli sektörlerden oluşur. Özellikle
+              <li style="font-weight: bolder;font-size: x-large;">Ekonomi:
+                <h4 style="font-size: large;">Denizli ekonomisi tarım, tekstil, turizm ve sanayi gibi çeşitli sektörlerden oluşur. Özellikle
                   tekstil
                   sektörü önemlidir ve Denizli, Türkiye'nin en önemli tekstil üretim merkezlerinden biridir. Ayrıca,
                   Pamukkale gibi turistik mekanlar şehrin turizm gelirlerine önemli katkı sağlar.</h4>
               </li>
-              <li style="font-weight: bolder;">Doğal Güzellikler:
-                <h4>Denizli, doğal güzellikleriyle de ünlüdür. Pamukkale Travertenleri, beyaz renkli kalsiyum
+              <li style="font-weight: bolder;font-size: x-large;">Doğal Güzellikler:
+                <h4 style="font-size: large;">Denizli, doğal güzellikleriyle de ünlüdür. Pamukkale Travertenleri, beyaz renkli kalsiyum
                   tortularından
                   oluşan termal kaynaklarla kaplıdır. Bu görsel şölen, yıl boyunca birçok turisti cezbetmektedir.</h4>
               </li>
-              <li style="font-weight: bolder;">Termal Turizm:
-                <h4> Denizli, termal sularıyla da tanınır. İl genelinde birçok termal tesis bulunmaktadır. Termal
+              <li style="font-weight: bolder;font-size: x-large;">Termal Turizm:
+                <h4 style="font-size: large;"> Denizli, termal sularıyla da tanınır. İl genelinde birçok termal tesis bulunmaktadır. Termal
                   suların
                   sağlık açısından faydalı olduğuna inanılır ve bu nedenle şehir termal turizm açısından da önemlidir.
                 </h4>
               </li>
-              <li style="font-weight: bolder;">Nüfus ve Yerleşim:
-                <h4> Denizli'nin nüfusu, 2024 itibarıyla yaklaşık 1 milyon 59 bin 82 kişi civarındadır. Şehir, merkez
+              <li style="font-weight: bolder;font-size: x-large;">Nüfus ve Yerleşim:
+                <h4 style="font-size: large;"> Denizli'nin nüfusu, 2024 itibarıyla yaklaşık 1 milyon 59 bin 82 kişi civarındadır. Şehir, merkez
                   ilçe
                   ve ilçelerden oluşur. Denizli'nin önemli ilçeleri arasında Pamukkale, Çivril, Çal, Buldan ve Honaz
                   bulunmaktadır.</h4>
               </li>
             </ul>
-
             </p>
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
-
-
-  <br>
-  <br>
-  <h1 style="text-align: center; color: #4D869C;font-size: 25px;font-weight: bold" id="pamuk">Turistik Yerler</h1>r
+  <br><br>
+  <h1 style="text-align: center; color: #4D869C;font-size: 25px;font-weight: bold" id="pamuk">Turistik Yerler</h1>
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-8 col-sm-4">
-        <div class="card" style="border-style: none;">
-          <img src="pamukkale.jpg" class="card-img-top">
+        <div class="card" style="border-style: none; background-color:#CDE8E5;">
+          <img src="resimler/pamukkale.jpg" class="card-img-top">
           <div class="card-body" style="background-color: #CDE8E5;">
             <h5 class="card-title">Pamukkale Travertenleri</h5>
-            <p class="card-text">Pamukkale Travertenleri, Türkiye'nin güneybatısında, Denizli ilinin Pamukkale ilçesinde
+            <p class="card-text" style="font-size: large;">Pamukkale Travertenleri, Türkiye'nin güneybatısında, Denizli ilinin Pamukkale ilçesinde
               bulunan doğal bir oluşumdur. "Pamukkale" kelimesi Türkçe'de "pamuk gibi kale" anlamına gelir ve bu adını,
               beyaz travertenlerin kale gibi görünmesinden almıştır.
 
@@ -254,20 +199,19 @@
               Pamukkale Travertenleri, tarih boyunca birçok medeniyete ev sahipliği yapmış ve şifalı sularıyla ünlü
               olmuştur. UNESCO Dünya Mirası Listesi'nde yer alan bu bölge, doğal güzelliği ve tarihi önemiyle yerli ve
               yabancı turistlerin ilgisini çeker. Ayrıca Hierapolis Antik Kenti'nin kalıntıları da Pamukkale'nin
-              ziyaretçileri için önemli bir turistik cazibe merkezidir.
+              ziyaretçileri için önemli bir turistik cazibe merkezidir.</p>
 
-            </p>
             <a href="https://maps.app.goo.gl/3dVdTRrbGNZNjy4r8" class="btn"
               style="background-color: #7fa27f;color: white;">Yol Tarifi Alın</a>
           </div>
         </div>
       </div>
       <div class="col-lg-12 col-md-8 col-sm-4" id="laodik">
-        <div class="card" style="border-style: none;">
-          <img src="laodik2.png" class="card-img-top">
+        <div class="card" style="border-style: none; background-color:#CDE8E5;">
+          <img src="resimler/laodik2.png" class="card-img-top">
           <div class="card-body" style="background-color: #CDE8E5;">
             <h5 class="card-title">Laodikya Antik Kenti</h5>
-            <p class="card-text">Denizli ilinin Honaz ilçesinin yakınlarında bulunan önemli bir antik yerleşimdir. Antik
+            <p class="card-text" style="font-size: large;">Denizli ilinin Honaz ilçesinin yakınlarında bulunan önemli bir antik yerleşimdir. Antik
               çağda Lidya Krallığı'nın önemli bir şehri olarak kurulan Laodikya, Roma İmparatorluğu döneminde de büyük
               bir öneme sahipti.
 
@@ -279,6 +223,7 @@
               arasında tiyatro, stadyum, tapınaklar, hamamlar, sarnıçlar ve anıtsal sütunlar gibi yapılar bulunur.
               Günümüzde, Laodikya, ziyaretçiler için önemli bir arkeolojik ve turistik cazibe merkezi olarak kabul
               edilir ve tarihi zenginliğiyle dikkat çeker.</p>
+
             <a href="https://maps.app.goo.gl/fBWe7zWmLiaSeoJB8" class="btn "
               style="background-color: #7fa27f;color: white;">Yol Tarifi Alın</a>
           </div>
@@ -289,11 +234,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-8 col-sm-4">
-        <div class="card" id="kaklık" style="border-style: none;">
-          <img src="kaklık mağarası.jpg" class="card-img-top">
+        <div class="card" id="kaklık" style="border-style: none; background-color:#CDE8E5;">
+          <img src="resimler/Kaklık_Mağarası.jpg" class="card-img-top">
           <div class="card-body" style="background-color: #CDE8E5;">
             <h5 class="card-title">Kaklık Mağarası</h5>
-            <p class="card-text"> Denizli iline bağlı Kaklık köyü yakınlarında bulunan doğal bir mağaradır. Mağara, 1972
+            <p class="card-text" style="font-size: large;"> Denizli iline bağlı Kaklık köyü yakınlarında bulunan doğal bir mağaradır. Mağara, 1972
               yılında keşfedilmiştir ve sonrasında turizme açılmıştır.
 
               Kaklık Mağarası, kalker oluşumlarıyla dikkat çeker. İçerisinde sarkıt ve dikitlerin yanı sıra sarkıt-perde
@@ -304,17 +249,18 @@
               ilginç bir keşif noktasıdır. Turistler, rehber eşliğinde mağarayı ziyaret edebilir ve doğanın muhteşem
               oluşumlarını gözlemleyebilirler. Mağara, Denizli'nin turistik cazibe merkezlerinden biri olarak yerel ve
               yabancı ziyaretçileri ağırlamaktadır.</p>
-            <a href="https://g.co/kgs/tNPeYnD" class="btn" style="background-color: #7fa27f;color: white;">Yol Tarifi
+            <a href="https://maps.app.goo.gl/sQgXwTD9jBXbppsN9" class="btn" style="background-color: #7fa27f;color: white;">Yol Tarifi
               Alın</a>
           </div>
         </div>
       </div>
+
       <div class="col-lg-12 col-md-8 col-sm-4">
-        <div style="border-style: none;" class="card" id="ışıklı">
-          <img src="acipayam-kanyonu.jpg" class="card-img-top">
+        <div style="border-style: none; background-color:#CDE8E5;" class="card" id="ışıklı" >
+          <img src="resimler/acipayam-kanyonu.jpg" class="card-img-top">
           <div class="card-body" style="background-color: #CDE8E5;">
             <h5 class="card-title">Acıpayam Kanyonu </h5>
-            <p class="card-text"> Denizli iline bağlı Acıpayam ilçesinde bulunan doğal bir kanyondur. Büyük Menderes
+            <p class="card-text" style="font-size: large;"> Denizli iline bağlı Acıpayam ilçesinde bulunan doğal bir kanyondur. Büyük Menderes
               Nehri'nin akışıyla oluşan bu kanyon, bölgenin doğal güzelliklerinden biridir. Kanyonun derinlikleri,
               yüksek kayalıkları ve etkileyici manzarasıyla ziyaretçilerin ilgisini çeker. Ayrıca kanyon, doğa
               yürüyüşleri ve kanyoning gibi aktiviteler için de popüler bir destinasyondur. Acıpayam Kanyonu, doğal
@@ -326,14 +272,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"

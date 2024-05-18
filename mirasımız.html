@@ -1,8 +1,14 @@
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="app.css">
 <style>
- .card-body h5 {font-size: 20px;}
- .card-body p {font-size: 20px;}
+  .card-body h5 {
+    font-size: 20px;
+  }
+
+  .card-body p {
+    font-size: 20px;
+  }
+
   div h4 {
     text-align: center;
     color: black;
@@ -12,76 +18,58 @@
     text-align: center;
     color: #7fa27f;
   }
-  .navbardiv{
-         font-size: large;
-         padding-left: 50px;
-         font-weight: bold;
-         
-         
-        }
-        .navbardiv ul li a {color: white;}
+  
 </style>
 
 <body style="background-color: #CDE8E5;">
 
-  <nav class="navbar navbar-expand-lg navbar-success" style="background-color: #4D869C;">
-        
+  <nav class="navbar navbardiv navbar-expand-lg navbar-dark" style="background-color: #4D869C;font-size: large;color: white;" >
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse navbardiv" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item ">
-           <a class="nav-link" href="giriş.html"><i class="fa-solid fa-house"></i> Giriş </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+           <a class="nav-link" href="index.html" id="hover"><i class="fa-solid fa-house"></i> Giriş </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sehrim.html">Şehrim</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="sehrim.html" id="hover">Şehrim</a>
         </li>
        
-        <li class="nav-item">
-          <a class="nav-link " href="Özgeçmiş.html">Özgeçmiş</a>
+        <li class="nav-item active">
+          <a class="nav-link " href="Özgeçmiş.html" id="hover">Özgeçmiş</a>
         </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              İletişim
-            </a>
-
-            <div class="dropdown-menu" style="background-color:#4D869C;border-style: none;">
-              <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="#">0538 019 2054</a>
-              <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="mailto:sumeyra.akca@ogr.sakarya.edu.tr?subject=Konu&body=Mesajınız buraya yazabilirsiniz">sumeyra.akca@ogr.sakarya.edu.tr</a>
-              <a class="dropdown-item" style="background-color:#4D869C;border-style: none;" href="https://wa.me/905380192054?text=Mesajınızı%20buraya%20yazabilirsiniz">Whatsapp İletişim</a>
-            </div>
+        <li class="nav-item active">
+          <a class="nav-link " href="iletişim.html" id="hover">İletişim</a>
+        </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mirasımız.html" id="hover"> Mirasımız      <img src="resimler/Denizlisporamblemi.png" width="30px" height="30px"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mirasımız.html" > Mirasımız      <img src="Denizlisporamblemi.png" width="30px" height="30px"></a>
+          <li class="nav-item active">
+            <a class="nav-link " href="Hakkında.html" id="hover">Hakkında</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Hakkında.html">Hakkında</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="ilgi alanlarım.html">İlgi Alanlarım</a>
+          <li class="nav-item active">
+            <a class="nav-link " href="ilgi alanlarım.html" id="hover">İlgi Alanlarım</a>
           </li>
       </ul>
     </div>
-
   </nav>
- 
 
-  <div style="background-color: #CDE8E5;margin-top: -7px;margin-left: -15px;margin-right: -15px;">
-    <br>
 
-    <img src="Denizlisporamblemi.png" width="300" height="300" style="margin: auto; display: block;">
+  <div style="background-color: #CDE8E5;margin-top: -7px;margin-left: -15px;margin-right: -15px;"> <br>
+
     <h2 style="text-align: center;color: #4D869C;">Kulübümüz</h2>
-
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-8 col-sm-4">
-          <div class="card" style="border-style: none;">
-            <img src="denizlispor1.jpg" class="card-img-top">
+          <div class="card" style="border-style: none;background-color: #CDE8E5;">
+            <img src="resimler/denizlispor1.jpg" class="card-img-top" style="border-radius: 30px;">
             <div class="card-body" style="background-color: #CDE8E5;">
               <h5 class="card-title" style="color: #4D869C;">TARİHÇE</h5>
-              <p class="card-text" style="color: black;">Kulübümüz Yönetim Kurulu İdari Kadro Başarılarımız Denizli Atatürk Stadyumu Haluk
+              <p class="card-text" style="color: black;">Kulübümüz Yönetim Kurulu İdari Kadro Başarılarımız Denizli
+                Atatürk Stadyumu Haluk
                 Ulusoy Tesisleri
                 Denizlispor , 1966 yılı Mayıs ayında Denizli ilinde kurulmuş olan, özellikle Profesyonel Futbol Takımı
                 ile tanınan spor kulübüdür. Renkleri yeşil-siyah olan kulübün futbol takımı, maçlarını 15.500 kişilik
@@ -94,11 +82,12 @@
           </div>
         </div>
         <div class="col-lg-12 col-md-8 col-sm-4">
-          <div class="card" style="border-style: none;">
-            <img src="denizlisporkadro.jpg" class="card-img-top">
+          <div class="card" style="border-style: none;background-color: #CDE8E5;">
+            <img src="resimler/denizlisporkadro.jpg" class="card-img-top" style="border-radius: 30px;">
             <div class="card-body " style="background-color: #CDE8E5;">
               <h5 class="card-title" style="color: #4D869C;">Kuruluşu</h5>
-              <p class="card-text" style="color: black;">1966 yılına gelindiğinde futbol kulüplerinin sayısında büyük bir artış olmuş ve
+              <p class="card-text" style="color: black;">1966 yılına gelindiğinde futbol kulüplerinin sayısında büyük
+                bir artış olmuş ve
                 Denizli'de profesyonel liglerde mücadele edecek bir takıma ihtiyaç duyulmaya başlanmıştır. 26 Mayıs 1966
                 tarihinde gerçekleşen genel kurul toplantısında Çelik Yeşilspor ve Pamukkale Gençlik kulüplerinin
                 Çaybaşı semtinde kurulu olan bu Denizlispor Kulübü'ne katılmasıyla profesyonel futbol takımının teşkili
@@ -106,26 +95,26 @@
                 bildirilmiş, Türkiye Futbol Federasyonu ise bu üç kulübün birleşimiyle profesyonel futbol takımı
                 teşkilini Denizlispor Gençlik Kulübü adı altında onaylayıp, 14 Temmuz 1966 tarihinde Denizlispor'un
                 Türkiye 2. Ligi'ne katılmasını uygun görmüştür.</p>
-
             </div>
           </div>
-
         </div>
       </div>
     </div>
-    
-    
-      <div  class=" container ">
-       <div class="row">
-        <div class="card col-lg-12 col-md-8 col-sm-4" style="border-style: none;background-color: #CDE8E5;" >
+    <img src="resimler/Denizlisporamblemi.png" width="300" height="300" style="margin: auto; display: block;">
+
+    <div class=" container ">
+      <div class="row">
+        <div class="card col-lg-12 col-md-8 col-sm-4" style="border-style: none;background-color: #CDE8E5;">
           <div class="card-body" style="background-color: #CDE8E5;">
             <h5 class="card-title" style="color: #4D869C;">Başarılarımız</h5>
-            <p class="card-text" style="color: black;"> Denizlispor'umuz, 1966-67 sezonunda ilk kez mücadele ettiği Türkiye 2. Ligi'nde sezonu 7. olarak tamamlamış,
+            <p class="card-text" style="color: black;"> Denizlispor'umuz, 1966-67 sezonunda ilk kez mücadele ettiği
+              Türkiye 2. Ligi'nde sezonu 7. olarak tamamlamış,
               sonraki üç sezonda ise ligi ikinci ve üçüncü sıralarda bitirmiştir. Türkiye İkinci Ligi'ne alınışının
               üzerinden 17 sene geçen Denizlispor 1982-83 sezonunda grup şampiyonu olarak tarihinde ilk kez Türkiye 1.
               Ligi'ne yükselmiştir. 1nci ligdeki ilk sezonunda mevsimi 7. sırada bitiren Denizlispor, 1984-85 sezonunda
               Danıştay kararıyla ligde kalmayı sağlamış, 1987-88 sezonunda ise yeniden ikinci lige düşmüştür. 1993-94
-              sezonunda tekrar 1. lige yükselen Yeşil-Siyahlılar, 1996-97 sezonunda yeniden 2. lige düşmüş, iki yıl aradan
+              sezonunda tekrar 1. lige yükselen Yeşil-Siyahlılar, 1996-97 sezonunda yeniden 2. lige düşmüş, iki yıl
+              aradan
               sonra 1998-99 sezonunda tekrar 1. lige çıkmıştır.
               2002-2003 sezonuna gelindiginde Türkiye'yi UEFA Kupası’nda temsil eden yeşil-siyahlı ekip Fransa’nın
               Lorient, Çek Cumhuriyeti’nin Sparta Prag ve Fransa’nın Olympique Lyon takımını eleyerek 4.tura yükselme
@@ -133,16 +122,14 @@
               gönlünde taht kurmuştu. Daha sonraki sezonlar bu başarıyı tekrarlayamayıp 2009-2010 sezonun sonunda 11 yıl
               boyunca aralıksız mücadele ettiği Süper Ligi ligi 17nci tamamlayarak 1. Lig'e düşmüştür.
               9 yıl 1.Lig'de mücadele ettikten sonra 2018-2019 futbol sezonunda 1.Lig'i şampiyon olarak tamamlamış ve
-              yeniden Süper Lig'e yükselmiştir.
-    </p>
+              yeniden Süper Lig'e yükselmiştir. </p>
           </div>
         </div>
-        </div>
       </div>
-      </div>
-    
-
+    </div>
   </div>
+  </div>
+  
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"

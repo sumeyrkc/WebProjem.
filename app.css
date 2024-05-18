@@ -1,0 +1,64 @@
+.navbardiv {
+    font-size: large;
+    padding-left: 50px;
+    font-weight: bold;
+
+
+}
+#hover:hover {background-color:#1d566d;color: white;}
+.navbardiv ul li a {
+    color: #FEF5ED;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .line:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #4D869C;
+    margin: auto;
+  }
+  .Giriş {
+    width: 30%;
+    
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+  }    
+  .whatsapp-link {
+    background-color: #4D869C;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .whatsapp-link:hover {
+    background-color: #3b6c7a;
+  }
+  .btn-send {
+    background-color: #4D869C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .btn-send:hover {
+    background-color: #3b6c7a;
+  }
+  .cardmiras {
+    display: inline-block;
+    color: #A79277;
+    text-align: center;
+  }
+  ul li h4 {
+    color: black;
+    text-align: center;
+  }
+
