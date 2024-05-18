@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($username == $correct_username && $password == $correct_password) {
         
         $_SESSION['username'] = $username;
-        header("Location: Hakkımda.html");
+        header("Location: Hakkında.html");
         exit();
     } else {
         
